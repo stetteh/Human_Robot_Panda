@@ -9,18 +9,17 @@ namespace Human_Robot_Panda
     class Robot
     {
         public string Name { get; set; }
-        public string Greeting { get; set; }
         public bool Terminator = false;
         public bool IsShutdown = true;
 
-        public void DisplayName(string name)
+        public void DisplayName()
         {
-            Console.WriteLine($"my name is {name}");
+            Console.WriteLine($"my name is {Name}");
         }
 
-        public void DisplayGreeting(string greeting)
+        public void DisplayGreeting()
         {
-            Console.WriteLine($"{greeting}");
+            Console.WriteLine($"Hello!!!!! { Name} ");
         }
       
         public void StartUp()
@@ -47,9 +46,9 @@ namespace Human_Robot_Panda
             }
         }
 
-        public void IsAsleep(bool shutdown)
+        public void IsAsleep()
         {
-            if (shutdown)
+            if (IsShutdown)
             {
                 Console.WriteLine("robot is shutdown");
             }

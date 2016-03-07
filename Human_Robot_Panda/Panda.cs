@@ -9,7 +9,6 @@ namespace Human_Robot_Panda
     class Panda
     {
         public string Name { get; set; }
-        public string Greeting { get; set; }
         public string Food { get; set; }
         public bool Asleep = false;
 
@@ -20,7 +19,7 @@ namespace Human_Robot_Panda
 
         public void DisplayGreeting()
         {
-            Console.WriteLine($"{this.Greeting}");
+            Console.WriteLine($"Hello!!!!!!!! {Name} ");
         }
 
         public void Eat()

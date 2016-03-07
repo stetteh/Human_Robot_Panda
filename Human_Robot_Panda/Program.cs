@@ -20,6 +20,8 @@ namespace Human_Robot_Panda
             robot.StartUp();
             robot.ShutDown();
 
+            Panda panda = new Panda();
+
             Console.ReadLine();
         }
     }

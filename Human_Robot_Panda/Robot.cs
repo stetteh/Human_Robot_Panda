@@ -8,10 +8,10 @@ namespace Human_Robot_Panda
 {
     class Robot
     {
-        public string name { get; set; }
-        public string greeting { get; set; }
-        public bool terminator = false;
-        public bool shutdown = true;
+        public string Name { get; set; }
+        public string Greeting { get; set; }
+        public bool Terminator = false;
+        public bool IsShutdown = true;
 
         public void DisplayName(string name)
         {

@@ -10,6 +10,13 @@ namespace Human_Robot_Panda
     {
         static void Main(string[] args)
         {
+            Human human = new Human();
+            human.Name = "Seth Quaye";
+
+            human.DisplayName();
+            human.DisplayGreeting();
+
+            Console.ReadLine();
         }
     }
 }

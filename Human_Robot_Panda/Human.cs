@@ -24,14 +24,14 @@ namespace Human_Robot_Panda
             Console.WriteLine($"Helllo!! {Name}");
         }
 
-        public string GoToSleep(string sleep)
+        public string GoToSleep()
         {
-            return sleep;
+            return Sleep;
         }
 
-        public string WakeUp(string wake)
+        public string WakeUp()
         {
-            return wake;
+            return Wake;
         }
 
         public void Eat()

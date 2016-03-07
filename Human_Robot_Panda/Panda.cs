@@ -12,6 +12,8 @@ namespace Human_Robot_Panda
         public string Greeting { get; set; }
         public string Food { get; set; }
         public bool Asleep = false;
+        public string Wakeup { get; set; }
+        public string Sleep { get; set; }
 
         public void DisplayName(string name)
         {
@@ -30,12 +32,12 @@ namespace Human_Robot_Panda
 
         public string GoToSleep(string sleep)
         {
-            return sleep;
+            return Sleep;
         }
 
-        public string WakeUp(string wake)
+        public string WakeUp()
         {
-            return wake;
+            return Wakeup;
         }
 
         public void IsAsleep()

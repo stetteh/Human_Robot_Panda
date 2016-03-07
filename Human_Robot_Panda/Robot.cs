@@ -10,7 +10,6 @@ namespace Human_Robot_Panda
     {
         public string name { get; set; }
         public string greeting { get; set; }
-        public string message { get; set; }
         public bool terminator = false;
         public bool shutdown = true;
 
@@ -24,15 +23,15 @@ namespace Human_Robot_Panda
             Console.WriteLine($"{greeting}");
         }
       
-        public void StartUp(string message)
+        public void StartUp()
         {
-            Console.WriteLine($"Message is {this.message}");
+            Console.WriteLine("Robot has Started!!!");
         }
 
         
-        public void ShutDown(string message)
+        public void ShutDown()
         {
-            Console.WriteLine($"Message is {this.message}");
+            Console.WriteLine("Robot has Shutdown");
 
         }
 

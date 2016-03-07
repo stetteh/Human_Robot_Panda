@@ -16,6 +16,10 @@ namespace Human_Robot_Panda
             human.DisplayName();
             human.DisplayGreeting();
 
+            Robot robot = new Robot();
+            robot.StartUp();
+            robot.ShutDown();
+
             Console.ReadLine();
         }
     }

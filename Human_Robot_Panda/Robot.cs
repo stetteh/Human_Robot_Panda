@@ -12,7 +12,7 @@ namespace Human_Robot_Panda
         public string greeting { get; set; }
         public string message { get; set; }
         public bool terminator = false;
-        public bool asleep = true;
+        public bool shutdown = true;
 
         public void DisplayName(string name)
         {
@@ -48,11 +48,11 @@ namespace Human_Robot_Panda
             }
         }
 
-        public void IsAsleep(bool asleep, string message)
+        public void IsAsleep(bool shutdown)
         {
-            if (asleep)
+            if (shutdown)
             {
-                Console.WriteLine($"");
+                Console.WriteLine("robot is shutdown");
             }
         }
     }

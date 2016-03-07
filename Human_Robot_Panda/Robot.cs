@@ -53,10 +53,5 @@ namespace Human_Robot_Panda
                 Console.WriteLine("robot is shutdown");
             }
         }
-
-        public override void Eat()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

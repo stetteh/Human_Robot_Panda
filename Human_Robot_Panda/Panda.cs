@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Human_Robot_Panda
 {
-    class Panda : Parent
+    class Panda : Parent, CanEat
     {
         
 
@@ -20,7 +20,7 @@ namespace Human_Robot_Panda
             Console.WriteLine($"Hello!!!!!!!! {Name} ");
         }
 
-        public override void Eat()
+        public void Eat(string food)
         {
             Console.WriteLine($"Yum i ate {food}");
         }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Human_Robot_Panda
 {
-    class Human : Parent
+    class Human : Parent, CanEat
     {
+
         //public string Name { get; set;  }
         // public string Food { get; set; }
         //public bool Asleep = false;
@@ -32,7 +33,7 @@ namespace Human_Robot_Panda
             Asleep = false;
         }
 
-        public override void Eat()
+        public void Eat(string food)
         {
             Console.WriteLine($"Yum i ate {food}");
         }

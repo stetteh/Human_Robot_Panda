@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Human_Robot_Panda
 {
-    class Robot
+    class Robot: Parent
     {
-        public string Name { get; set; }
+        //public string Name { get; set; }
         public bool Terminator = false;
         public bool IsShutdown = true;
 
-        public void DisplayName()
+        public override void DisplayName()
         {
             Console.WriteLine($"my name is {Name}");
         }
 
-        public void DisplayGreeting()
+        public override void DisplayGreeting()
         {
             Console.WriteLine($"Hello!!!!! { Name} ");
         }
@@ -52,6 +52,11 @@ namespace Human_Robot_Panda
             {
                 Console.WriteLine("robot is shutdown");
             }
+        }
+
+        public override void Eat()
+        {
+            throw new NotImplementedException();
         }
     }
 }

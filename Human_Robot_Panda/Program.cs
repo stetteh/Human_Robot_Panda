@@ -13,7 +13,7 @@ namespace Human_Robot_Panda
             //Instance of human
             Human human = new Human();
             human.Name = "Seth Quaye";
-            human.Food = "Taco";
+            human.food = "Taco";
             human.Asleep = true;
 
             //function call
@@ -33,7 +33,7 @@ namespace Human_Robot_Panda
 
             //Instance of panda
             Panda panda = new Panda();
-            panda.Food = "Bamboo and Sugar Cane";
+            panda.food = "Bamboo and Sugar Cane";
             panda.Asleep = true;
 
             //function call

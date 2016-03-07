@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Human_Robot_Panda
 {
-    class Human
+    class Human : Parent
     {
-        public string Name { get; set;  }
-        public string Food { get; set; }
-        public bool Asleep = false;
+        //public string Name { get; set;  }
+        // public string Food { get; set; }
+        //public bool Asleep = false;
 
-        public void DisplayName()
+        public override void DisplayName()
         {
             Console.WriteLine($"my name is {this.Name}");
         }
 
-        public void DisplayGreeting()
+        public override void DisplayGreeting()
         {
             Console.WriteLine($"Helllo!! {Name}");
         }
@@ -32,9 +32,9 @@ namespace Human_Robot_Panda
             Asleep = false;
         }
 
-        public void Eat()
+        public override void Eat()
         {
-            Console.WriteLine($"Yum i ate {this.Food}");
+            Console.WriteLine($"Yum i ate {food}");
         }
 
         public void IsAsleep()

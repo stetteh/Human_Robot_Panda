@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Human_Robot_Panda
 {
-    abstract class Parent
+    public abstract class Parent
     {
+        public string Name { get; set; }
+        public bool Asleep = false;
+        public string food { get; set; }
+
+
+        public abstract void DisplayName();
+        public abstract void DisplayGreeting();
+        public abstract void Eat();
     }
+
+    
 }

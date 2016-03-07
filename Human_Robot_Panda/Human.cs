@@ -8,5 +8,38 @@ namespace Human_Robot_Panda
 {
     class Human
     {
+        public string name { get; set;  }
+        public string greeting { get; set;  }
+        public string sleep { get; set; }
+        public string wake { get; set; }
+        public bool asleep = true;
+
+        public void DisplayName(string name)
+        {
+            Console.WriteLine($"my name is {name}");
+        }
+
+        public void DisplayGreeting(string greeting)
+        {
+            Console.WriteLine($"{greeting}");
+        }
+
+        public string GoToSleep(string sleep)
+        {
+            return sleep;
+        }
+
+        public string WakeUp(string wake)
+        {
+            return wake;
+        }
+
+        public void IsAsleep(bool asleep)
+        {
+            if (asleep)
+            {
+                Console.WriteLine($"Human is asleep");
+            }
+        }
     }
 }

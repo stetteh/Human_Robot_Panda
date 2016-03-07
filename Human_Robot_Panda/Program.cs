@@ -13,10 +13,12 @@ namespace Human_Robot_Panda
             Human human = new Human();
             human.Name = "Seth Quaye";
             human.Food = "Taco";
+            human.Asleep = true;
 
             human.DisplayName();
             human.DisplayGreeting();
             human.Eat();
+            human.IsAsleep();
 
             Robot robot = new Robot();
             robot.Terminator = true;
@@ -27,8 +29,11 @@ namespace Human_Robot_Panda
 
             Panda panda = new Panda();
             panda.Food = "Bamboo and Sugar Cane";
+            panda.Asleep = true;
 
             panda.Eat();
+            panda.IsAsleep();
+
             Console.ReadLine();
         }
     }

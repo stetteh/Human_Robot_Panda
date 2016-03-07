@@ -12,7 +12,7 @@ namespace Human_Robot_Panda
         public string Sleep { get; set; }
         public string Wake { get; set; }
         public string Food { get; set; }
-        public bool Asleep = true;
+        public bool Asleep = false;
 
         public void DisplayName()
         {
@@ -39,9 +39,9 @@ namespace Human_Robot_Panda
             Console.WriteLine($"Yum i ate {this.Food}");
         }
 
-        public void IsAsleep(bool asleep)
+        public void IsAsleep()
         {
-            if (asleep)
+            if (Asleep)
             {
                 Console.WriteLine($"Human is asleep");
             }

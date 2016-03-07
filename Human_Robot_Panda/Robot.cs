@@ -35,15 +35,15 @@ namespace Human_Robot_Panda
 
         }
 
-        public void IsTerminator(bool terminator)
+        public void IsTerminator()
         {
-            if (terminator)
+            if (Terminator)
             {
-                Console.WriteLine("It is not a Terminator");
+                Console.WriteLine("It is a Terminator");
             }
             else
             {
-                Console.WriteLine("Its a Terminator");
+                Console.WriteLine("It is not a Terminator");
             }
         }
 

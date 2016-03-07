@@ -19,8 +19,11 @@ namespace Human_Robot_Panda
             human.Eat();
 
             Robot robot = new Robot();
+            robot.Terminator = true;
+
             robot.StartUp();
             robot.ShutDown();
+            robot.IsTerminator();
 
             Panda panda = new Panda();
             panda.Food = "Bamboo and Sugar Cane";

@@ -8,10 +8,10 @@ namespace Human_Robot_Panda
 {
     class Panda
     {
-        public string name { get; set; }
-        public string greeting { get; set; }
-        public string food { get; set; }
-        public bool asleep = true;
+        public string Name { get; set; }
+        public string Greeting { get; set; }
+        public string Food { get; set; }
+        public bool Asleep = true;
 
         public void DisplayName(string name)
         {
@@ -23,9 +23,9 @@ namespace Human_Robot_Panda
             Console.WriteLine($"{greeting}");
         }
 
-        public void Eat(string food)
+        public void Eat()
         {
-            Console.WriteLine($"Yum i ate {food}");
+            Console.WriteLine($"Yum i ate {Food}");
         }
 
         public string GoToSleep(string sleep)

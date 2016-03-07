@@ -34,9 +34,9 @@ namespace Human_Robot_Panda
             return wake;
         }
 
-        public void Eat(string food)
+        public void Eat()
         {
-            Console.WriteLine($"Yum i ate {food}");
+            Console.WriteLine($"Yum i ate {this.Food}");
         }
 
         public void IsAsleep(bool asleep)

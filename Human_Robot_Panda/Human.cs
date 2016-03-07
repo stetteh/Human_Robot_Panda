@@ -9,7 +9,6 @@ namespace Human_Robot_Panda
     class Human
     {
         public string Name { get; set;  }
-        public string Sleep { get; set; }
         public string Wake { get; set; }
         public string Food { get; set; }
         public bool Asleep = false;
@@ -24,14 +23,14 @@ namespace Human_Robot_Panda
             Console.WriteLine($"Helllo!! {Name}");
         }
 
-        public string GoToSleep()
+        public void GoToSleep()
         {
-            return Sleep;
+            Asleep = true;
         }
 
-        public string WakeUp()
+        public void WakeUp()
         {
-            return Wake;
+            Asleep = false;
         }
 
         public void Eat()

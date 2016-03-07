@@ -12,17 +12,15 @@ namespace Human_Robot_Panda
         public string Greeting { get; set; }
         public string Food { get; set; }
         public bool Asleep = false;
-        public string Wakeup { get; set; }
-        public string Sleep { get; set; }
 
-        public void DisplayName(string name)
+        public void DisplayName()
         {
-            Console.WriteLine($"my name is {name}");
+            Console.WriteLine($"my name is {this.Name}");
         }
 
-        public void DisplayGreeting(string greeting)
+        public void DisplayGreeting()
         {
-            Console.WriteLine($"{greeting}");
+            Console.WriteLine($"{this.Greeting}");
         }
 
         public void Eat()
@@ -30,14 +28,14 @@ namespace Human_Robot_Panda
             Console.WriteLine($"Yum i ate {Food}");
         }
 
-        public string GoToSleep(string sleep)
+        public void GoToSleep()
         {
-            return Sleep;
+            Asleep = true;
         }
 
-        public string WakeUp()
+        public void WakeUp()
         {
-            return Wakeup;
+            Asleep = false;
         }
 
         public void IsAsleep()
